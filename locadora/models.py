@@ -15,12 +15,12 @@ class Categoria(models.Model):
         return self.nome
 
 class Filme(models.Model):
-    titulo = models.CharField(max_length = 100)
+    nome = models.CharField(max_length = 100)
     valor = models.FloatField()
     categoria = models.ForeignKey(Categoria, on_delete = models.CASCADE)
 
     def __str__(self):
-        return self.titulo
+        return self.nome
 
 class Locacao(models.Model):
     nome = models.CharField(max_length = 100)

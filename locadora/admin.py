@@ -4,7 +4,7 @@ from .models import Filme, Locacao, Cliente, Categoria
 # Register your models here.
 @admin.register(Filme)
 class FilmeAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'valor')
+    list_display = ('nome', 'valor')
 
 @admin.register(Locacao)
 class LocacaoAdmin(admin.ModelAdmin):
